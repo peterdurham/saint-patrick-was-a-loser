@@ -14,8 +14,19 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "THE BITTER TRUTH OF SAINT PATRICK'S DAY",
   description: "The celebration that masks a cultural tragedy",
+  openGraph: {
+    title: "THE BITTER TRUTH OF SAINT PATRICK'S DAY",
+    description: "The celebration that masks a cultural tragedy",
+    images: [
+      {
+        url: '/saint_patrick.png',
+        width: 1200,
+        height: 630,
+        alt: 'The Bitter Truth of Saint Patrick\'s Day',
+      },
+    ],
+  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
